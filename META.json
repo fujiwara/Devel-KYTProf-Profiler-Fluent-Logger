@@ -55,6 +55,17 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/fujiwara/Devel-KYTProf-Profiler-Fluent-Logger/issues"
+      },
+      "homepage" : "https://github.com/fujiwara/Devel-KYTProf-Profiler-Fluent-Logger",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/fujiwara/Devel-KYTProf-Profiler-Fluent-Logger.git",
+         "web" : "https://github.com/fujiwara/Devel-KYTProf-Profiler-Fluent-Logger"
+      }
+   },
    "version" : "0.01",
    "x_authority" : "cpan:FUJIWARA"
 }
