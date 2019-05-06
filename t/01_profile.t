@@ -28,11 +28,12 @@ subtest 'post' => sub {
             my $now = time;
             ok $logger->post_with_time("test.message" => { foo => "bar" }, $now);
             ok $prof = Mock->pop;
+            my $size = delete $prof->{data}->{message_size};
+            ok $size >= 7;
             is_deeply $prof->{data} => {
                 method       => '_post',
                 tag          => "test.message",
                 message_time => $now,
-                message_size => 20,
             };
 
             $logger->close;
